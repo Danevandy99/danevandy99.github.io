@@ -5,13 +5,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content=">A Re-hatching of the Bird App" />
+  <meta name="theme-color" content="#111111">
   <link rel="icon" href="img/favicon.ico">
   <link href="https://fonts.cdnfonts.com/css/roboto" rel="stylesheet">
   <style>
-    body {
+    body, html {
       padding: 0px;
       margin: 0px;
       font-family: "Roboto", Arial, Helvetica, sans-serif;
+      font-display: swap;
+      overflow: hidden;
+      background-color: #111111;
     }
 
     .center-on-page {
@@ -21,7 +25,7 @@
       align-items: center;
       height: 100vh;
       width: 100vw;
-      background-color: #111111;
+      overflow: hidden;
     }
 
     img {
@@ -33,7 +37,8 @@
       flex-direction: row;
       gap: 15px;
       align-items: center;
-      justify-items: center;
+      justify-content: center;
+      width: 100%;
     }
 
     h1 {
@@ -60,12 +65,18 @@
     }
 
     p {
-      max-width: 100%;
+      max-width: 100vw;
       width: 768px;
       color: #888888;
       margin-bottom: 40px;
       text-align: center;
       margin-top: 25px;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-right: 0px;
+      margin-left: 0px;
+      overflow: hidden;
+      box-sizing: border-box;
     }
   </style>
 </head>
@@ -73,7 +84,7 @@
   <div class="center-on-page">
 
     <div class="row">
-      <img src="img/hatching_chick.png" width="65" height="auto" aria-label="hatching chick emoji" />
+      <img src="img/hatching_chick.png" width="65" height="65" aria-label="hatching chick emoji" />
       <h1>Chick</h1>
     </div>
     <h5>A Re-hatching of the Bird App</h5>
